@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pbStatus = new System.Windows.Forms.ProgressBar();
-            this.btnRun = new System.Windows.Forms.Button();
-            this.btnEnd = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
+            this.BtnRun = new System.Windows.Forms.Button();
+            this.BtnEnd = new System.Windows.Forms.Button();
+            this.BtnReset = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -44,35 +44,35 @@
             this.pbStatus.Size = new System.Drawing.Size(342, 39);
             this.pbStatus.TabIndex = 0;
             // 
-            // btnRun
+            // BtnRun
             // 
-            this.btnRun.BackColor = System.Drawing.Color.LightCoral;
-            this.btnRun.Font = new System.Drawing.Font("돋움", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnRun.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRun.Location = new System.Drawing.Point(12, 57);
-            this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(179, 112);
-            this.btnRun.TabIndex = 1;
-            this.btnRun.Text = "실행";
-            this.btnRun.UseVisualStyleBackColor = false;
+            this.BtnRun.BackColor = System.Drawing.Color.LightCoral;
+            this.BtnRun.Font = new System.Drawing.Font("돋움", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BtnRun.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnRun.Location = new System.Drawing.Point(12, 57);
+            this.BtnRun.Name = "BtnRun";
+            this.BtnRun.Size = new System.Drawing.Size(179, 112);
+            this.BtnRun.TabIndex = 1;
+            this.BtnRun.Text = "실행";
+            this.BtnRun.UseVisualStyleBackColor = false;
             // 
-            // btnEnd
+            // BtnEnd
             // 
-            this.btnEnd.Location = new System.Drawing.Point(197, 57);
-            this.btnEnd.Name = "btnEnd";
-            this.btnEnd.Size = new System.Drawing.Size(157, 50);
-            this.btnEnd.TabIndex = 2;
-            this.btnEnd.Text = "멈춤";
-            this.btnEnd.UseVisualStyleBackColor = true;
+            this.BtnEnd.Location = new System.Drawing.Point(197, 57);
+            this.BtnEnd.Name = "BtnEnd";
+            this.BtnEnd.Size = new System.Drawing.Size(157, 50);
+            this.BtnEnd.TabIndex = 2;
+            this.BtnEnd.Text = "멈춤";
+            this.BtnEnd.UseVisualStyleBackColor = true;
             // 
-            // btnReset
+            // BtnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(197, 113);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(157, 56);
-            this.btnReset.TabIndex = 3;
-            this.btnReset.Text = "리셋";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.BtnReset.Location = new System.Drawing.Point(197, 113);
+            this.BtnReset.Name = "BtnReset";
+            this.BtnReset.Size = new System.Drawing.Size(157, 56);
+            this.BtnReset.TabIndex = 3;
+            this.BtnReset.Text = "리셋";
+            this.BtnReset.UseVisualStyleBackColor = true;
             // 
             // lblStatus
             // 
@@ -89,14 +89,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 205);
             this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.btnEnd);
-            this.Controls.Add(this.btnRun);
+            this.Controls.Add(this.BtnReset);
+            this.Controls.Add(this.BtnEnd);
+            this.Controls.Add(this.BtnRun);
             this.Controls.Add(this.pbStatus);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "행상태진";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,9 +106,9 @@
         #endregion
 
         private System.Windows.Forms.ProgressBar pbStatus;
-        private System.Windows.Forms.Button btnRun;
-        private System.Windows.Forms.Button btnEnd;
-        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button BtnRun;
+        private System.Windows.Forms.Button BtnEnd;
+        private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Timer Timer;
     }
